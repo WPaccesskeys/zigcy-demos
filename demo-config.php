@@ -438,6 +438,15 @@ function zigcy_demo_config(){
 						),
 					),
 				),
+
+				'premium_demos' => array(
+					'screen'			=> $git_url . 'cosmetics/cosmetics.jpg',
+					'preview_url'		=> 'https://demo.accesspressthemes.com/zigcy/demo-six',
+					'upgrade_url'		=> 'https://accesspressthemes.com/',
+					'demo_name'			=> 'Groshory Shop',
+				),
+
+
 			);
 	return $data;
 }
