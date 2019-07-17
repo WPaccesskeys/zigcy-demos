@@ -17,7 +17,6 @@ function zigcy_demo_config(){
 					'xml_file'     		=> $git_url . 'furniture/furniture.xml',
 					'theme_settings' 	=> $git_url . 'furniture/furniture.dat',
 					'widgets_file'  	=> $git_url . 'furniture/furniture.wie',
-					'redux_opt'			=> $git_url .'furniture/furniture.json',
 					'import_redux'		=> array(
 											'file_url'		=> $git_url .'furniture/furniture.json',
 											'option_name' 	=> 'zigcy_options',
