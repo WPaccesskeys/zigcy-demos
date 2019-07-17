@@ -13,7 +13,7 @@ function zigcy_demo_config(){
 			$data = array(
 
 				'furniture' => array(
-					
+					'demo_name'			=> esc_html__('Furniture Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'furniture/furniture.xml',
 					'theme_settings' 	=> $git_url . 'furniture/furniture.dat',
 					'widgets_file'  	=> $git_url . 'furniture/furniture.wie',
@@ -25,8 +25,9 @@ function zigcy_demo_config(){
 					'home_title'  		=> 'Home',
 					'blog_title'  		=> 'Blog',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary menu',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary menu',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -88,7 +89,7 @@ function zigcy_demo_config(){
 
 
 				'fashion' => array(
-					
+					'demo_name'			=> esc_html__('Fashion Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'fashion/fashion.xml',
 					'theme_settings' 	=> $git_url . 'fashion/fashion.dat',
 					'widgets_file'  	=> $git_url . 'fashion/fashion.wie',
@@ -99,8 +100,9 @@ function zigcy_demo_config(){
 					'home_title'  		=> 'Home',
 					'blog_title'  		=> 'Blogs',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary menu',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary menu',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -155,7 +157,7 @@ function zigcy_demo_config(){
 
 
 				'electronics' => array(
-					
+					'demo_name'			=> esc_html__('Electronics Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'electronics/electronics.xml',
 					'theme_settings' 	=> $git_url . 'electronics/electronics.dat',
 					'widgets_file'  	=> $git_url . 'electronics/electronics.wie',
@@ -167,8 +169,9 @@ function zigcy_demo_config(){
 					'home_title'  		=> 'Home',
 					'blog_title'  		=> 'Blog',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary menu',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary menu',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -228,7 +231,7 @@ function zigcy_demo_config(){
 				),
 				
 				'organic' => array(
-					
+					'demo_name'			=> esc_html__('Organic Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'organic/organic.xml',
 					'theme_settings' 	=> $git_url . 'organic/organic.dat',
 					'widgets_file'  	=> $git_url . 'organic/organic.wie',
@@ -239,8 +242,9 @@ function zigcy_demo_config(){
 					'home_title'  		=> 'Home',
 					'blog_title'  		=> 'Blogs',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary menu',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary menu',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -295,7 +299,7 @@ function zigcy_demo_config(){
 
 
 				'watches' => array(
-					
+					'demo_name'			=> esc_html__('Watches Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'watches/watches.xml',
 					'widgets_file'  	=> $git_url . 'watches/watches.wie',
 					'redux_opt'			=> $git_url .'watches/watches.json',
@@ -305,8 +309,9 @@ function zigcy_demo_config(){
 					'is_shop'			=> true,
 					'home_title'  		=> 'Home',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary menu',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary menu',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -368,7 +373,7 @@ function zigcy_demo_config(){
 
 
 				'cosmetics' => array(
-					
+					'demo_name'			=> esc_html__('Cosmetics Demo','access-demo-importer'),
 					'xml_file'     		=> $git_url . 'cosmetics/cosmetics.xml',
 					'widgets_file'  	=> $git_url . 'cosmetics/cosmetics.wie',
 					'redux_opt'			=> $git_url .'cosmetics/cosmetics.json',
@@ -379,8 +384,9 @@ function zigcy_demo_config(){
 					'home_title'  		=> 'Home',
 					'blog_title'  		=> 'Blog',
 					'posts_to_show'  	=> '10',
-					'menu_name' 		=> 'primary',
-					'menu_id'			=> 'menu-1',
+					'menus'				=> array(
+											'menu-1' => 'primary',
+											),
 					'required_plugins'  => array(
 						'free' => array(
 							array(
@@ -439,12 +445,27 @@ function zigcy_demo_config(){
 					),
 				),
 
-				'premium_demos' => array(
-					'screen'			=> $git_url . 'cosmetics/cosmetics.jpg',
-					'preview_url'		=> 'https://demo.accesspressthemes.com/zigcy/demo-six',
-					'upgrade_url'		=> 'https://accesspressthemes.com/',
-					'demo_name'			=> 'Groshory Shop',
-				),
+			/*	'premium_demos' => array(
+
+						array(
+							'screen'			=> $git_url . 'cosmetics/cosmetics.jpg',
+							'preview_url'		=> 'https://demo.accesspressthemes.com/zigcy/demo-six',
+							'upgrade_url'		=> 'https://accesspressthemes.com/',
+							'demo_name'			=> 'Groshory Shop',
+						),
+						array(
+							'screen'			=> $git_url . 'cosmetics/cosmetics.jpg',
+							'preview_url'		=> 'https://demo.accesspressthemes.com/zigcy/demo-six',
+							'upgrade_url'		=> 'https://accesspressthemes.com/',
+							'demo_name'			=> 'Food Shop',
+						),
+						array(
+							'screen'			=> $git_url . 'cosmetics/cosmetics.jpg',
+							'preview_url'		=> 'https://demo.accesspressthemes.com/zigcy/demo-six',
+							'upgrade_url'		=> 'https://accesspressthemes.com/',
+							'demo_name'			=> 'Watches Shop',
+						),
+				),*/
 
 
 			);
